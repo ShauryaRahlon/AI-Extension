@@ -5,7 +5,13 @@ export default defineConfig({
   manifest: {
     name: "AI Assistant",
     description: "AI-powered browser assistant with sidebar",
-    permissions: ["activeTab", "tabs", "storage", "scripting"],
+    permissions: [
+      "activeTab",
+      "tabs",
+      "storage",
+      "scripting",
+      "identity",
+    ],
     host_permissions: ["<all_urls>"],
   },
 });
