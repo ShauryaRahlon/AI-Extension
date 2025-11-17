@@ -13,7 +13,7 @@ CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
 def health():
     return jsonify({'status': 'ok', 'message': 'Backend service running'})
 
-@app.route('/exchange-code', methods=['POST'])
+@app.route('/exchange-code', methods=['POST']) 
 def exchange_code():
     """Exchange authorization code for access + refresh tokens"""
     data = request.json
